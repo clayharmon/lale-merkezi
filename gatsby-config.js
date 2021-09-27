@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: "Lale Merkezi",
@@ -19,6 +23,12 @@ module.exports = {
       resolve: "gatsby-theme-i18n-lingui",
       options: {
         localeDir: "./i18n/lingui",
+      },
+    },
+    {
+      resolve: "gatsby-source-wordpress",
+      options: {
+        url: `${process.env.WPGRAPHQL_URL}`,
       },
     },
     "gatsby-plugin-react-helmet",
