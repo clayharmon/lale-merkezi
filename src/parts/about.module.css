@@ -1,0 +1,46 @@
+.about-row h2 {
+  font-size: 3rem;
+  text-shadow: 2px 2px var(--second-accent-color);
+}
+
+.about-columns {
+  grid-template-columns: 3fr 5fr;
+  column-gap: 40px;
+}
+
+.image-column {
+  margin: -50px 0;
+}
+
+.text-column {
+  min-width: 300px;
+}
+
+.text-body {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.team {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.teacher {
+  padding: 20px;
+  width: 33.3333333%;
+  max-width: 200px;
+}
+
+.teacher img {
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.teacher p {
+  padding-top: 10px;
+  font-size: 1rem;
+  font-style: italic;
+  text-align: center;
+}

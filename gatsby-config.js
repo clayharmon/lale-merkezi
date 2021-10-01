@@ -40,6 +40,14 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /images/,
+        },
+      },
+    },
     "gatsby-transformer-sharp",
     "gatsby-plugin-sharp",
     {
@@ -48,9 +56,30 @@ module.exports = {
         name: "Lale Merkezi",
         short_name: "lale",
         start_url: "/en/",
-        background_color: "#663399",
+        background_color: "#884595",
         display: "minimal-ui",
-        icon: "src/images/gatsby-icon.png",
+        icon: "src/images/icon.png",
+      },
+    },
+    {
+      resolve: `gatsby-plugin-webfonts`,
+      options: {
+        fonts: {
+          google2: [
+            {
+              family: "Bebas Neue",
+              axes: "wght@400",
+              subsets: ["latin", "latin-ext"],
+              fontDisplay: "swap",
+            },
+            {
+              family: "Roboto",
+              axes: "wght@300;700",
+              subsets: ["latin", "latin-ext"],
+              fontDisplay: "swap",
+            },
+          ],
+        },
       },
     },
   ],

@@ -1,0 +1,103 @@
+.input-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+}
+
+.lead-form button {
+  display: block;
+  margin-top: 20px;
+  background-color: white;
+  border: 2px solid var(--main-accent-color);
+  color: var(--main-accent-color);
+  min-width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 12px 12px;
+  line-height: 1.5;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.lead-form button:hover {
+  background: var(--main-accent-color);
+  color: white;
+}
+
+.lead-form button:disabled,
+.lead-form button[disabled] {
+  opacity: 0.3;
+  cursor: not-allowed;
+  background: white;
+  color: black;
+}
+
+.thankyou-page {
+  display: grid;
+  width: 100%;
+  padding: 40px;
+  text-align: center;
+  align-content: center;
+}
+
+.thankyou-page h1 {
+  font-size: 40px;
+  vertical-align: middle;
+  font-weight: 700;
+  color: white;
+}
+
+.dot-flashing {
+  display: inline-block;
+  position: relative;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #9880ff;
+  color: #9880ff;
+  animation: dots 1s infinite linear alternate;
+  animation-delay: 0.5s;
+}
+
+.dot-flashing::before,
+.dot-flashing::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+}
+
+.dot-flashing::before {
+  left: -15px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: var(--main-accent-color);
+  color: var(--main-accent-color);
+  animation: dots 1s infinite alternate;
+  animation-delay: 0s;
+}
+
+.dot-flashing::after {
+  left: 15px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: var(--main-accent-color);
+  color: var(--main-accent-color);
+  animation: dots 1s infinite alternate;
+  animation-delay: 1s;
+}
+
+@keyframes dots {
+  0% {
+    background-color: var(--main-accent-color);
+  }
+  50%,
+  100% {
+    background-color: #a9daff;
+  }
+}

@@ -1,0 +1,91 @@
+.hero-row {
+  height: 90vh;
+  min-height: 600px;
+  color: white;
+  text-align: center;
+}
+
+.hero-row h2 {
+  font-size: 4.5rem;
+  text-shadow: 4px 4px var(--second-accent-color);
+}
+
+.hero-row h3 {
+  font-size: 2.5rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.hero-overlay {
+  background: rgb(136, 69, 149);
+  background: linear-gradient(
+    0deg,
+    rgba(136, 69, 149, 0.7) 0%,
+    rgba(83, 137, 199, 0.7) 100%
+  );
+}
+
+.hero-columns {
+  grid-template-columns: 1fr;
+}
+
+.button-group {
+  margin-top: 20px;
+}
+
+.button-group a {
+  position: relative;
+  display: inline-block;
+  padding: 0px 25px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: white;
+  overflow: hidden;
+}
+
+.button-group a > span {
+  display: block;
+  position: relative;
+  z-index: 150;
+  padding: 20px 0px;
+  overflow: hidden;
+  line-height: 1;
+}
+
+.button-underline > span::before {
+  content: "";
+  position: absolute;
+  z-index: 120;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  transition: all 0.3s;
+  transform: translateY(0px);
+}
+
+.button-underline:hover span::before {
+  transform: translateY(-10px);
+}
+
+a.button-underline {
+  margin-right: 5px;
+}
+
+a.button-highlight {
+  margin-left: 5px;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  transition: all 0.3s;
+  border: 1px solid white;
+}
+
+a.button-highlight:hover {
+  background-color: var(--second-accent-color);
+  color: white;
+  box-shadow: 6px 6px 0px 0px rgba(255, 255, 255, 1);
+  transform: scale(1.04) translateY(-4px) translateX(-4px);
+}

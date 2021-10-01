@@ -6,7 +6,9 @@ const Layout = ({ children }) => {
     <>
       <div>
         <main>{children}</main>
-        <footer>© {new Date().getFullYear()}</footer>
+        <footer>
+          ©{new Date().getFullYear()} Lale Merkezi. All Rights Reserved.
+        </footer>
       </div>
     </>
   )
