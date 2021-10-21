@@ -14,5 +14,13 @@
     "localName": "Türkçe",
     "langDir": "ltr",
     "dateFormat": "DD.MM.YYYY"
+  },
+  {
+    "code": "ar",
+    "hrefLang": "ar-SY",
+    "name": "Arabic",
+    "localName": "عربي",
+    "langDir": "rtl",
+    "dateFormat": "DD/MM/YYYY"
   }
 ]

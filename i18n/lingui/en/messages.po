@@ -6,3 +6,40 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: @lingui/cli\n"
 "Language: en\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
+
+#: src/forms/lead/lead-form.js:54
+#: src/forms/lead/lead-form.js:55
+msgid "form.fname"
+msgstr ""
+
+#: src/forms/lead/lead-form.js:79
+msgid "form.gdpr"
+msgstr ""
+
+#: src/forms/lead/lead-form.js:63
+#: src/forms/lead/lead-form.js:64
+msgid "form.lname"
+msgstr ""
+
+#: src/forms/lead/lead-form.js:73
+#: src/forms/lead/lead-form.js:74
+msgid "form.phone"
+msgstr ""
+
+#: src/forms/lead/lead-form.js:94
+msgid "form.send"
+msgstr ""
+
+#: src/forms/lead/lead-form.js:32
+msgid "form.thankyou"
+msgstr ""
+
+#: src/forms/lead/lead-form.js:46
+msgid "form.unkownError"
+msgstr ""
