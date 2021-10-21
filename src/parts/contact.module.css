@@ -69,3 +69,32 @@
   box-shadow: 10px 10px 5px 0px var(--main-accent-color);
   transform: scale(1.04) translateY(-4px) translateX(-4px);
 }
+
+@media (max-width: 992px) {
+  .contact-row {
+    padding: 0px 30px;
+    text-align: center;
+  }
+  .left-column h2 {
+    font-size: 3rem;
+  }
+  .contact-items a {
+    font-size: 1.2rem;
+  }
+  .contact-columns {
+    grid-template-columns: 1fr;
+  }
+  .right-column {
+    max-width: 500px;
+    margin: 40px auto 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-row {
+    padding: 0px 10px;
+  }
+  .right-column {
+    padding: 20px;
+  }
+}
