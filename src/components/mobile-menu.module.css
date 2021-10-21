@@ -1,0 +1,151 @@
+.mobile-nav-container {
+  display: none;
+  vertical-align: middle;
+  margin-left: 20px;
+}
+
+.hamburger {
+  all: unset;
+  display: block;
+  padding: 9px 15px;
+  border: 2px solid white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.hamburger > span {
+  height: 2px;
+  background: white;
+  width: 30px;
+  display: block;
+  margin: 6px 0px;
+  transition: all 0.3s;
+}
+
+.scrolled .hamburger {
+  border-color: var(--second-accent-color);
+}
+.scrolled .hamburger > span {
+  background: var(--second-accent-color);
+}
+
+.mobile-nav {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  text-align: center;
+  background: var(--main-accent-color);
+}
+
+.mobile-nav.active {
+  height: 100%;
+  opacity: 1;
+}
+
+.mobile-nav ul {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%);
+}
+
+.mobile-nav a {
+  position: relative;
+  display: inline-block;
+  padding: 0px 25px;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: white;
+  overflow: hidden;
+  margin: 10px 0;
+  text-shadow: 2px 2px var(--second-accent-color);
+  transform: translateY(20px);
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.mobile-nav.active li:nth-child(1) a {
+  transition-delay: 100ms;
+}
+.mobile-nav.active li:nth-child(2) a {
+  transition-delay: 200ms;
+}
+.mobile-nav.active li:nth-child(3) a {
+  transition-delay: 300ms;
+}
+.mobile-nav.active li:nth-child(4) a {
+  transition-delay: 400ms;
+}
+.mobile-nav.active li:nth-child(5) a {
+  transition-delay: 500ms;
+}
+
+.mobile-nav.active a {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.mobile-nav a > span {
+  display: block;
+  position: relative;
+  padding: 20px 0px;
+  overflow: hidden;
+}
+
+.close-btn {
+  all: unset;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.close-btn > span {
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background: white;
+  top: 50%;
+  left: 50%;
+}
+
+.close-btn > span:first-child {
+  transform: translateX(-50%) rotate(45deg);
+}
+
+.close-btn > span:last-child {
+  transform: translateX(-50%) rotate(-45deg);
+}
+
+@media (max-width: 992px) {
+  .mobile-nav-container {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 600px) {
+  .mobile-nav-container {
+    margin-left: 10px;
+  }
+  .hamburger {
+    padding: 6px 10px;
+  }
+
+  .hamburger > span {
+    width: 20px;
+    margin: 4px 0px;
+  }
+}

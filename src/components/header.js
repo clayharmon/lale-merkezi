@@ -4,6 +4,7 @@ import * as styles from "./header.module.css"
 import LogoIcon from "../images/logo-icon.svg"
 import LogoText from "../images/logo-text.svg"
 import Language from "./language"
+import MobileMenu from "./mobile-menu"
 
 const Header = ({ menuData }) => {
   const menuItems = menuData.menuItems.nodes
@@ -26,7 +27,7 @@ const Header = ({ menuData }) => {
           <LogoText />
         </div>
       </Link>
-      <div>
+      <div className={styles.mainNavContainer}>
         <nav className={styles.mainNav}>
           <ul>
             {menuItems.map(item => (
@@ -41,6 +42,7 @@ const Header = ({ menuData }) => {
       </div>
       <div className={styles.focus}>
         <Language isScrolled={isScrolled} />
+        <MobileMenu menuItems={menuItems} isScrolled={isScrolled} />
       </div>
     </header>
   )

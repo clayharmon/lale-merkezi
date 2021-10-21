@@ -1,7 +1,7 @@
 import * as React from "react"
 import { useLocalization, LocalizedLink as Link } from "gatsby-theme-i18n"
 import * as style from "./language.module.css"
-import { FaLanguage } from "react-icons/fa"
+import { BiGlobe } from "react-icons/bi"
 
 const Language = ({ isScrolled }) => {
   const { locale, config } = useLocalization()
@@ -31,7 +31,7 @@ const Language = ({ isScrolled }) => {
         className={`${style.languageIcon} ${languageButtonActiveClass}`}
         type="button"
       >
-        <FaLanguage />
+        <BiGlobe />
         <span>Change Language</span>
       </button>
       <div
@@ -48,7 +48,8 @@ const Language = ({ isScrolled }) => {
       >
         {config.map(location => (
           <Link key={location.code} to={path} language={location.code}>
-            {location.localName}
+            <span className={style.localeShort}>{location.code}</span>
+            <span className={style.localeFull}>{location.localName}</span>
           </Link>
         ))}
       </div>

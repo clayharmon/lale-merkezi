@@ -1,6 +1,7 @@
 .language {
   position: relative;
   display: inline-block;
+  vertical-align: middle;
 }
 .language-icon {
   all: initial;
@@ -52,6 +53,10 @@
   transform: translateY(-20px);
 }
 
+.language-menu .locale-short {
+  display: none;
+}
+
 .language-menu a {
   font-weight: 700;
   display: block;
@@ -88,4 +93,37 @@
 
 .scrolled .language-icon.active > svg > path {
   fill: white;
+}
+
+@media (max-width: 992px) {
+  .language-icon {
+    padding: 8px 15px;
+  }
+  .language-icon > span {
+    display: none;
+  }
+
+  .language-menu a {
+    padding: 15px 20px;
+    text-align: center;
+  }
+  .language-menu .locale-short {
+    display: block;
+    text-transform: uppercase;
+  }
+
+  .language-menu .locale-full {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .language-icon {
+    padding: 6px 10px;
+    font-size: 21px;
+  }
+  .language-menu a {
+    padding: 14px 10px;
+    font-size: 0.8rem;
+  }
 }
