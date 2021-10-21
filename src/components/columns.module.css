@@ -1,6 +1,6 @@
 .columns {
   display: grid;
   align-items: center;
-  margin: 20px;
+  margin: 20px 0px;
   width: 100%;
 }

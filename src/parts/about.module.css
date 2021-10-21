@@ -1,6 +1,7 @@
 .about-row h2 {
   font-size: 3rem;
   text-shadow: 2px 2px var(--second-accent-color);
+  margin-bottom: 5px;
 }
 
 .about-columns {
@@ -43,4 +44,37 @@
   font-size: 1rem;
   font-style: italic;
   text-align: center;
+}
+
+@media (max-width: 992px) {
+  .about-row h2 {
+    font-size: 2.8rem;
+  }
+  .image-column {
+    display: none;
+  }
+
+  .about-columns {
+    grid-template-columns: 1fr;
+    padding: 0px 30px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-columns {
+    padding: 0px 10px;
+  }
+  .text-body {
+    font-size: 1.1rem;
+    line-height: 1.4;
+  }
+
+  .about-content h2 {
+    font-size: 24px;
+  }
+
+  .teacher {
+    width: 50%;
+  }
 }
