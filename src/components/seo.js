@@ -1,8 +1,9 @@
 import * as React from "react"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
+import { useLocalization } from "gatsby-theme-i18n"
 
-function Seo({ description, lang = "en", meta = [], title }) {
+function Seo({ description, meta = [], title }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -19,10 +20,13 @@ function Seo({ description, lang = "en", meta = [], title }) {
 
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
+  const { locale, config } = useLocalization()
+  const { langDir } = config.find(item => item.code === locale)
   return (
     <Helmet
       htmlAttributes={{
-        lang,
+        lang: locale,
+        dir: langDir,
       }}
       title={title}
       titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}

@@ -15,7 +15,7 @@ module.exports = {
       options: {
         defaultLang: "en",
         prefixDefault: true,
-        locales: "en tr",
+        locales: "en tr ar",
         configPath: require.resolve("./i18n/config.json"),
       },
     },

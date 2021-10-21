@@ -27,12 +27,12 @@
 }
 
 .logo-icon > svg {
-  width: 100%;
+  width: auto;
   height: 50px;
 }
 
 .logo-text > svg {
-  width: 100%;
+  width: auto;
   height: 40px;
 }
 

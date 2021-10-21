@@ -16,6 +16,13 @@ const i18nMessages = {
     phoneInvalid: "Telefon geçersiz.",
     gdpr: "Bu alan gereklidir.",
   },
+  ar: {
+    required: "This field is required.",
+    nameMin: "Names must be longer than 2 characters.",
+    nameMax: "Names must be shorter than 100 characters.",
+    phoneInvalid: "Invalid phone number.",
+    gdpr: "Must accept the agreement.",
+  },
 }
 
 const LeadValidationSchema = locale => {
