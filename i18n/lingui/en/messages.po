@@ -13,6 +13,10 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
+#: src/components/language.js:37
+msgid "Change Language"
+msgstr "Change Language"
+
 #: src/forms/lead/lead-form.js:54
 #: src/forms/lead/lead-form.js:55
 msgid "form.fname"

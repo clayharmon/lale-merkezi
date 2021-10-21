@@ -18,7 +18,10 @@ const Header = ({ menuData }) => {
   }, [])
 
   return (
-    <header className={`${styles.header} ${isScrolled ? styles.scrolled : ""}`}>
+    <header
+      className={`${styles.header} ${isScrolled ? styles.scrolled : ""}`}
+      dir="ltr"
+    >
       <Link to="/" className={styles.logo}>
         <div className={styles.logoIcon}>
           <LogoIcon />

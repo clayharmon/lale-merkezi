@@ -2,6 +2,7 @@ import * as React from "react"
 import { useLocalization, LocalizedLink as Link } from "gatsby-theme-i18n"
 import * as style from "./language.module.css"
 import { BiGlobe } from "react-icons/bi"
+import { Trans } from "@lingui/macro"
 
 const Language = ({ isScrolled }) => {
   const { locale, config } = useLocalization()
@@ -32,7 +33,9 @@ const Language = ({ isScrolled }) => {
         type="button"
       >
         <BiGlobe />
-        <span>Change Language</span>
+        <span>
+          <Trans>Change Language</Trans>
+        </span>
       </button>
       <div
         className={style.languageMenu}
