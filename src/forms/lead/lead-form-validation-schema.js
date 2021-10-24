@@ -13,15 +13,15 @@ const i18nMessages = {
     required: "Bu alan gereklidir.",
     nameMin: "Kullanıcı adları 2 harften uzun olmalıdır.",
     nameMax: "Kullanıcı adları 100 harften kısa olmalıdır.",
-    phoneInvalid: "Telefon geçersiz.",
+    phoneInvalid: "Geçersiz telefon numarası",
     gdpr: "Bu alan gereklidir.",
   },
   ar: {
-    required: "This field is required.",
-    nameMin: "Names must be longer than 2 characters.",
-    nameMax: "Names must be shorter than 100 characters.",
-    phoneInvalid: "Invalid phone number.",
-    gdpr: "Must accept the agreement.",
+    required: "هذه الخانة مطلوبه.",
+    nameMin: "يجب أن تكون الأسماء أطول من حرفين.",
+    nameMax: "يجب أن تكون الأسماء أقصر من مائة حرف.",
+    phoneInvalid: "رقم الهاتف غير صالح.",
+    gdpr: "هذه الخانة مطلوبه.",
   },
 }
 
