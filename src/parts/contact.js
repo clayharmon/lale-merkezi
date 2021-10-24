@@ -10,12 +10,15 @@ import {
   FaWhatsapp,
 } from "react-icons/fa"
 import LeadForm from "../forms/lead/lead-form"
+import { Trans } from "@lingui/macro"
 
 const Contact = () => (
   <Row rowClass={styles.contactRow}>
     <Columns columnsClass={styles.contactColumns}>
       <div className={styles.leftColumn}>
-        <h2 id="contact">Get In Touch</h2>
+        <h2 id="contact">
+          <Trans>Get In Touch</Trans>
+        </h2>
         <div className={styles.contactItems}>
           <ul>
             <li>

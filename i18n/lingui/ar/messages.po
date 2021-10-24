@@ -17,6 +17,14 @@ msgstr ""
 msgid "Change Language"
 msgstr "تغيير اللغة"
 
+#: src/parts/contact.js:20
+msgid "Get In Touch"
+msgstr ""
+
+#: src/parts/programs.js:21
+msgid "Our Programs"
+msgstr ""
+
 #: src/forms/lead/lead-form.js:54
 #: src/forms/lead/lead-form.js:55
 msgid "form.fname"
