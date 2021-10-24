@@ -19,39 +19,39 @@ msgstr "Dili Değiştir"
 
 #: src/parts/contact.js:20
 msgid "Get In Touch"
-msgstr ""
+msgstr "İletişim"
 
 #: src/parts/programs.js:21
 msgid "Our Programs"
-msgstr ""
+msgstr "Programlarımız"
 
 #: src/forms/lead/lead-form.js:54
 #: src/forms/lead/lead-form.js:55
 msgid "form.fname"
-msgstr ""
+msgstr "İsim"
 
 #: src/forms/lead/lead-form.js:79
 msgid "form.gdpr"
-msgstr ""
+msgstr "Sorguma yanıt verebilmeleri için bu web sitesinin gönderilen bilgilerimi saklamasına izin veriyorum."
 
 #: src/forms/lead/lead-form.js:63
 #: src/forms/lead/lead-form.js:64
 msgid "form.lname"
-msgstr ""
+msgstr "Soyisim"
 
 #: src/forms/lead/lead-form.js:73
 #: src/forms/lead/lead-form.js:74
 msgid "form.phone"
-msgstr ""
+msgstr "Telefon"
 
 #: src/forms/lead/lead-form.js:94
 msgid "form.send"
-msgstr ""
+msgstr "Gönder"
 
 #: src/forms/lead/lead-form.js:32
 msgid "form.thankyou"
-msgstr ""
+msgstr "Teşekkür ederim"
 
 #: src/forms/lead/lead-form.js:46
 msgid "form.unkownError"
-msgstr ""
+msgstr "Bilinmeyen bir hata oluştu. Lütfen tekrar deneyin."
