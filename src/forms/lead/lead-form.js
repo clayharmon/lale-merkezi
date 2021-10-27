@@ -56,7 +56,7 @@ const LeadForm = () => {
               <p
                 style={{
                   display: isUnknownerror ? "block" : "none",
-                  color: "white",
+                  color: "red",
                   marginBottom: "20px",
                   fontWeight: "bold",
                   fontSize: "12px",
