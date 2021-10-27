@@ -21,7 +21,7 @@ msgstr "Dili Değiştir"
 msgid "Get In Touch"
 msgstr "İletişim"
 
-#: src/parts/programs.js:21
+#: src/parts/programs.js:24
 msgid "Our Programs"
 msgstr "Programlarımız"
 
@@ -59,6 +59,14 @@ msgstr "Bilinmeyen bir hata oluştu. Lütfen tekrar deneyin."
 #: src/pages/index.js:21
 msgid "home.seo.description"
 msgstr "Lale Dil, Kültür ve Danışmanlık Merkezi, Türkiye'de yaşayan bir yabancı olarak toplumunuzun ve hayatınızın kapılarını akıcı Türkçe ile açmak için var."
+
+#: src/parts/hero.js:12
+msgid "home.seo.herobgimage.alt"
+msgstr "İstanbul, Türkiye geceleri"
+
+#: src/parts/programs.js:14
+msgid "home.seo.programsbgimage.alt"
+msgstr "Bahçelievler İstanbul sokakları"
 
 #: src/pages/index.js:20
 msgid "home.seo.title"

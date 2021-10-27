@@ -5,13 +5,16 @@ import { getImage, GatsbyImage } from "gatsby-plugin-image"
 import * as styles from "./programs.module.css"
 import Row from "../components/row"
 import Columns from "../components/columns"
-import { Trans } from "@lingui/macro"
+import { Trans, t } from "@lingui/macro"
 
 const Programs = ({ data, programs }) => {
   return (
     <Row
       backgroundImageData={data.programBackgroundImage.localFile}
-      backgroundImageAlt="istanbul streets"
+      backgroundImageAlt={t({
+        message: "The streets of Bahçelievler İstanbul",
+        id: "home.seo.programsbgimage.alt",
+      })}
       backgroundImageOverlayClass={styles.programsOverlay}
       rowClass={styles.programsRow}
       rowContainerClass={styles.programsRowContainer}

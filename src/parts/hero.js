@@ -4,11 +4,15 @@ import { LocalizedLink as Link } from "gatsby-theme-i18n"
 import * as styles from "./hero.module.css"
 import Row from "../components/row"
 import Columns from "../components/columns"
+import { t } from "@lingui/macro"
 
 const Hero = ({ data }) => (
   <Row
     backgroundImageData={data.backgroundimage.localFile}
-    backgroundImageAlt="istanbul"
+    backgroundImageAlt={t({
+      message: "Istanbul, Turkey at night",
+      id: "home.seo.herobgimage.alt",
+    })}
     rowClass={styles.heroRow}
     backgroundImageOverlayClass={styles.heroOverlay}
   >
