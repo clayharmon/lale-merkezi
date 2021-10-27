@@ -17,11 +17,11 @@ const i18nMessages = {
     gdpr: "Bu alan gereklidir.",
   },
   ar: {
-    required: "هذه الخانة مطلوبه.",
+    required: "هذا الفراغ مطلوب",
     nameMin: "يجب أن تكون الأسماء أطول من حرفين.",
     nameMax: "يجب أن تكون الأسماء أقصر من مائة حرف.",
-    phoneInvalid: "رقم الهاتف غير صالح.",
-    gdpr: "هذه الخانة مطلوبه.",
+    phoneInvalid: "رقم هاتف غير صحيح",
+    gdpr: "هذا الفراغ مطلوب",
   },
 }
 
