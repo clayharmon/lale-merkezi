@@ -22,7 +22,27 @@ const LeadForm = () => {
       }}
       validationSchema={localValidation}
       onSubmit={(values, { setSubmitting }) => {
-        console.log(values)
+        setIsUnknownError(false)
+        const url = "https://forms.lalemerkezi.workers.dev/forms/contact"
+        fetch(url, {
+          method: "POST",
+          body: JSON.stringify({ ...values, lang: locale }),
+        })
+          .then(response => {
+            if (response.status !== 200) {
+              throw new Error("Server Error")
+            } else {
+              return response.json()
+            }
+          })
+          .then(() => {
+            setSubmitting(false)
+            setIsSent(true)
+          })
+          .catch(() => {
+            setSubmitting(false)
+            setIsUnknownError(true)
+          })
       }}
     >
       {({ values, isSubmitting }) => (
