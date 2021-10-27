@@ -21,19 +21,19 @@ const Contact = () => (
         </h2>
         <div className={styles.contactItems}>
           <ul>
-            <li>
+            <li dir="ltr">
               <a href="tel:905528422776">
                 <FaWhatsapp />
                 <span>+90 552 842 2776</span>
               </a>
             </li>
-            <li>
+            <li dir="ltr">
               <a href="tel:902124520809">
                 <FaPhoneSquareAlt />
                 <span>+90 212 452 08 09</span>
               </a>
             </li>
-            <li>
+            <li dir="ltr">
               <a
                 href="https://www.instagram.com/LaleMerkeziIstanbul/"
                 target="_blank"
@@ -43,7 +43,7 @@ const Contact = () => (
                 <span>@lalemerkeziistanbul</span>
               </a>
             </li>
-            <li>
+            <li dir="ltr">
               <a
                 href="https://www.facebook.com/LaleMerkeziIstanbul/"
                 target="_blank"

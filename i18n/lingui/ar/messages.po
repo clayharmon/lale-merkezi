@@ -21,7 +21,7 @@ msgstr "تغيير اللغة"
 msgid "Get In Touch"
 msgstr "للتواصل"
 
-#: src/parts/programs.js:21
+#: src/parts/programs.js:24
 msgid "Our Programs"
 msgstr "برامجنا"
 
@@ -55,3 +55,19 @@ msgstr "اشكرك"
 #: src/forms/lead/lead-form.js:46
 msgid "form.unkownError"
 msgstr "كان هناك خطأ غير معروف. حاول مرة اخرى."
+
+#: src/pages/index.js:21
+msgid "home.seo.description"
+msgstr "يوجد مركز Lale للغات والثقافة والاستشارات لفتح الأبواب أمام مجتمعك وحياتك كأجنبي يعيش في تركيا من خلال الطلاقة التركية."
+
+#: src/parts/hero.js:12
+msgid "home.seo.herobgimage.alt"
+msgstr "اسطنبول ، تركيا في الليل"
+
+#: src/parts/programs.js:14
+msgid "home.seo.programsbgimage.alt"
+msgstr "شوارع بهجيلي ايفلر اسطنبول"
+
+#: src/pages/index.js:20
+msgid "home.seo.title"
+msgstr "الصفحة الرئيسية"

@@ -21,7 +21,7 @@ msgstr "Change Language"
 msgid "Get In Touch"
 msgstr "Get In Touch"
 
-#: src/parts/programs.js:21
+#: src/parts/programs.js:24
 msgid "Our Programs"
 msgstr "Our Programs"
 
@@ -55,3 +55,19 @@ msgstr "Thank You!"
 #: src/forms/lead/lead-form.js:46
 msgid "form.unkownError"
 msgstr "There was an unknown error. Please try again."
+
+#: src/pages/index.js:21
+msgid "home.seo.description"
+msgstr "The Lale Language, Culture, and Consultancy Center exists to open the doors to your community and life as a foreigner living in Turkey through Turkish fluency."
+
+#: src/parts/hero.js:12
+msgid "home.seo.herobgimage.alt"
+msgstr "Istanbul, Turkey at night"
+
+#: src/parts/programs.js:14
+msgid "home.seo.programsbgimage.alt"
+msgstr "The streets of Bahçelievler İstanbul"
+
+#: src/pages/index.js:20
+msgid "home.seo.title"
+msgstr "Home"
