@@ -17,33 +17,41 @@ msgstr ""
 msgid "Change Language"
 msgstr "Change Language"
 
+#: src/parts/contact.js:20
+msgid "Get In Touch"
+msgstr "Get In Touch"
+
+#: src/parts/programs.js:21
+msgid "Our Programs"
+msgstr "Our Programs"
+
 #: src/forms/lead/lead-form.js:54
 #: src/forms/lead/lead-form.js:55
 msgid "form.fname"
-msgstr ""
+msgstr "First Name"
 
 #: src/forms/lead/lead-form.js:79
 msgid "form.gdpr"
-msgstr ""
+msgstr "I consent to having this website store my submitted information so they can respond to my inquiry"
 
 #: src/forms/lead/lead-form.js:63
 #: src/forms/lead/lead-form.js:64
 msgid "form.lname"
-msgstr ""
+msgstr "Last Name"
 
 #: src/forms/lead/lead-form.js:73
 #: src/forms/lead/lead-form.js:74
 msgid "form.phone"
-msgstr ""
+msgstr "Phone"
 
 #: src/forms/lead/lead-form.js:94
 msgid "form.send"
-msgstr ""
+msgstr "Send"
 
 #: src/forms/lead/lead-form.js:32
 msgid "form.thankyou"
-msgstr ""
+msgstr "Thank You!"
 
 #: src/forms/lead/lead-form.js:46
 msgid "form.unkownError"
-msgstr ""
+msgstr "There was an unknown error. Please try again."

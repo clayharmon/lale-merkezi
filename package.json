@@ -35,7 +35,9 @@
   },
   "license": "0BSD",
   "scripts": {
+    "prebuild": "lingui compile",
     "build": "gatsby build",
+    "predevelop": "lingui compile",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "serve": "gatsby serve",

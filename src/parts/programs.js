@@ -5,6 +5,7 @@ import { getImage, GatsbyImage } from "gatsby-plugin-image"
 import * as styles from "./programs.module.css"
 import Row from "../components/row"
 import Columns from "../components/columns"
+import { Trans } from "@lingui/macro"
 
 const Programs = ({ data, programs }) => {
   return (
@@ -16,7 +17,9 @@ const Programs = ({ data, programs }) => {
       rowContainerClass={styles.programsRowContainer}
     >
       <Columns>
-        <h2 id="programs">Our Programs</h2>
+        <h2 id="programs">
+          <Trans>Our Programs</Trans>
+        </h2>
         <Row>
           <Columns columnsClass={styles.programsColumns}>
             {programs.map(program => {
