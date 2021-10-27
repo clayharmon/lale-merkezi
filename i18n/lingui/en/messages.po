@@ -55,3 +55,11 @@ msgstr "Thank You!"
 #: src/forms/lead/lead-form.js:46
 msgid "form.unkownError"
 msgstr "There was an unknown error. Please try again."
+
+#: src/pages/index.js:21
+msgid "home.seo.description"
+msgstr "The Lale Language, Culture, and Consultancy Center exists to open the doors to your community and life as a foreigner living in Turkey through Turkish fluency."
+
+#: src/pages/index.js:20
+msgid "home.seo.title"
+msgstr "Home"

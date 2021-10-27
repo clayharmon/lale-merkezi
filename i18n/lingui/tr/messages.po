@@ -55,3 +55,11 @@ msgstr "Teşekkür ederim"
 #: src/forms/lead/lead-form.js:46
 msgid "form.unkownError"
 msgstr "Bilinmeyen bir hata oluştu. Lütfen tekrar deneyin."
+
+#: src/pages/index.js:21
+msgid "home.seo.description"
+msgstr "Lale Dil, Kültür ve Danışmanlık Merkezi, Türkiye'de yaşayan bir yabancı olarak toplumunuzun ve hayatınızın kapılarını akıcı Türkçe ile açmak için var."
+
+#: src/pages/index.js:20
+msgid "home.seo.title"
+msgstr "Anasayfa"

@@ -8,6 +8,7 @@ import Hero from "../parts/hero"
 import About from "../parts/about"
 import Programs from "../parts/programs"
 import Contact from "../parts/contact"
+import { t } from "@lingui/macro"
 
 const IndexPage = ({ data }) => {
   const { hero, about, programs } = data.home
@@ -15,7 +16,14 @@ const IndexPage = ({ data }) => {
   const programsList = data.programs.nodes
   return (
     <Layout>
-      <Seo title="Home" />
+      <Seo
+        title={t({ message: "Home", id: "home.seo.title" })}
+        description={t({
+          message:
+            "The Lale Language, Culture, and Consultancy Center exists to open the doors to your community and life as a foreigner living in Turkey through Turkish fluency.",
+          id: "home.seo.description",
+        })}
+      />
       <Header menuData={data.menu} />
       <Hero data={hero} />
       <About data={about} teachers={teachers} />
